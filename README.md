@@ -13,8 +13,8 @@ This project demonstrates a Spring Boot application using Spring Modulith for mo
 ## Modules
 
 ### Transaction Module (`com.example.transaction`)
-- Handles orders creation and lifecycle management
-- Publishes domain events for orders state changes
+- Handles transaction creation and lifecycle management
+- Publishes domain events for transaction state changes
 - REST API endpoints for orders operations
 
 ### Inventory Module (`com.example.inventory`)
@@ -24,7 +24,7 @@ This project demonstrates a Spring Boot application using Spring Modulith for mo
 
 ### Orders Module (`com.example.orders`)
 - Handles customer Orders
-- Listens to Transaction events to send relevant Orders
+- Listens to Orders events to send relevant Orders
 - Supports multiple Orders channels
 
 ## Architecture
