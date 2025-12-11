@@ -11,6 +11,10 @@ This project demonstrates a Spring Boot application using Spring Modulith for mo
 
 ## Modules
 
+concept modulith :
+- sync with response using spi (service provider interface)
+- async (eventListener, transaction event listener, aplicationModuleListener)
+
 ### Transaction Module (`com.example.transaction`)
 - Handles transaction creation and lifecycle management
 - Publishes domain events for transaction state changes
