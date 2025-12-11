@@ -12,19 +12,19 @@ This project demonstrates a Spring Boot application using Spring Modulith for mo
 ## Modules
 
 ### Transaction Module (`com.example.transaction`)
-- Handles orders creation and lifecycle management
-- Publishes domain events for orders state changes
-- REST API endpoints for orders operations
+- Handles transaction creation and lifecycle management
+- Publishes domain events for transaction state changes
+- REST API endpoints for transaction operations
 
 ### Inventory Module (`com.example.inventory`)
 - Manages product inventory and stock levels
-- Listens to orders events for inventory updates
+- Listens to transaction events for inventory updates
 - Provides inventory availability checks
 
-### Notification Module (`com.example.orders`)
-- Handles customer notifications
-- Listens to orders events to send relevant notifications
-- Supports multiple notification channels
+### Orders Module (`com.example.orders`)
+- Handles customer Orders
+- Listens to Transaction events to send relevant Orders
+- Supports multiple Orders channels
 
 ## Architecture
 
@@ -49,20 +49,20 @@ mvn spring-boot:run
 
 ## API Endpoints
 
-### Orders
-- `POST /api/transaction` - Create a new orders
-- `PUT /api/transaction/{id}/complete` - Complete an orders
+### Transaction
+- `POST /api/transaction` - Create a new transaction
+- `PUT /api/transaction/{id}/complete` - Complete an transaction
 
 ### Example Usage
 
-Create an orders:
+Create an transaction:
 ```bash
-curl -X POST http://localhost:8080/api/orders \
+curl -X POST http://localhost:8080/api/transaction \
   -H "Content-Type: application/json" \
   -d '{"customerId": "customer123", "amount": 100.00}'
 ```
 
-Complete an orders:
+Complete an transaction:
 ```bash
 curl -X PUT http://localhost:8080/api/transaction/1/complete
 ```
