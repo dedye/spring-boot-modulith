@@ -58,7 +58,7 @@ mvn spring-boot:run
 
 Create an orders:
 ```bash
-curl -X POST http://localhost:8080/api/orders \
+curl -X POST http://localhost:8080/api/transaction \
   -H "Content-Type: application/json" \
   -d '{"customerId": "customer123", "amount": 100.00}'
 ```
