@@ -50,20 +50,20 @@ mvn spring-boot:run
 
 ## API Endpoints
 
-### Orders
+### Transaction
 - `POST /api/transaction` - Create a new Transaction
 - `PUT /api/transaction/{id}/complete` - Complete an Transaction
 
 ### Example Usage
 
-Create an orders:
+Create an Transaction:
 ```bash
 curl -X POST http://localhost:8080/api/transaction \
   -H "Content-Type: application/json" \
   -d '{"customerId": "customer123", "amount": 100.00}'
 ```
 
-Complete an orders:
+Complete an Transaction:
 ```bash
 curl -X PUT http://localhost:8080/api/transaction/1/complete
 ```
