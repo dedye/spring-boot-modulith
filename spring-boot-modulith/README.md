@@ -11,7 +11,7 @@ This project demonstrates a Spring Boot application using Spring Modulith for mo
 
 ## Modules
 
-fitur modulith :
+Modulith feature :
 - sync with response using spi (service provider interface)
 - async (eventListener, transaction event listener, aplicationModuleListener)
 
@@ -87,3 +87,4 @@ mvn test
 ```
 
 This generates PlantUML diagrams showing the modular structure in `target/spring-modulith-docs/`.
+
